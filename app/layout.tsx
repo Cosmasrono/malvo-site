@@ -13,7 +13,7 @@ const inter = Inter({ variable: "--f-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Malvo: laptops, desktops, monitors and phones", template: `%s | ${SITE_NAME}` },
+  title: { default: "Zero Gravity Tech: laptops, desktops, monitors and phones", template: `%s | ${SITE_NAME}` },
   description: "Laptops, desktops, monitors and phones, priced in Kenyan shillings.",
   openGraph: { siteName: SITE_NAME, type: "website" },
 };

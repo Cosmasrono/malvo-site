@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
     return jsonResponse({ error: "Prices have changed. Refresh and review your cart." }, 409);
   }
 
-  const reference = `MLV-${randomBytes(4).toString("hex").toUpperCase()}`;
+  const reference = `ZGT-${randomBytes(4).toString("hex").toUpperCase()}`;
   const contact = Object.fromEntries(
     Object.keys(FIELDS).map((field) => [field, (body.contact as Record<string, string>)[field].trim()]),
   ) as Record<keyof typeof FIELDS, string>;
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
     return `${index + 1}. ${product.name}\n   ${item.color} / ${item.storage}\n   ${item.quantity} x ${formatMoney(unitPrice(product, item.storage))} = ${formatMoney(unitPrice(product, item.storage) * item.quantity)}`;
   });
   const message = [
-    `Hello Malvo, I'd like to order.\nReference: ${reference}`,
+    `Hello Zero Gravity Tech, I'd like to order.\nReference: ${reference}`,
     lines.join("\n\n"),
     [
       `Subtotal: ${formatMoney(quote.subtotal)}`,

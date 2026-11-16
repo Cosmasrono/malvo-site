@@ -35,12 +35,12 @@ export default function Home() {
         <Suspense><Catalog /></Suspense>
       </section>
       <section className="wrap shopping-help" id="shopping-help" aria-labelledby="help-title">
-        <div><h2 id="help-title">Before you<br />make it yours.</h2><p>A few things to know about shopping with Malvo.</p></div>
+        <div><h2 id="help-title">Before you<br />make it yours.</h2><p>A few things to know about shopping with Zero Gravity Tech.</p></div>
         <div className="faq-list">
-          <details><summary>How do I place an order?</summary><p>Add your products to the cart and continue to checkout. Enter your delivery details, then continue on WhatsApp and tap Send to request your order. Malvo will confirm availability, delivery and payment in chat.</p></details>
-          <details><summary>What about delivery, warranty and returns?</summary><p>Ask Malvo on WhatsApp to confirm delivery charges, warranty coverage and returns terms for your device before arranging payment.</p></details>
+          <details><summary>How do I place an order?</summary><p>Add your products to the cart and continue to checkout. Enter your delivery details, then continue on WhatsApp and tap Send to request your order. Zero Gravity Tech will confirm availability, delivery and payment in chat.</p></details>
+          <details><summary>What about delivery, warranty and returns?</summary><p>Ask Zero Gravity Tech on WhatsApp to confirm delivery charges, warranty coverage and returns terms for your device before arranging payment.</p></details>
           <details><summary>How do I choose the right device?</summary><p>Open a product to see its specifications, photos and available options. For laptops and phones, use <Link href="/compare">Compare devices</Link> to view the details side by side.</p></details>
-          <details><summary>How can I contact Malvo?</summary><p>Chat with Malvo on <a href={WHATSAPP_URL} rel="noreferrer">WhatsApp: {WHATSAPP_DISPLAY}</a> for product questions and order enquiries.</p></details>
+          <details><summary>How can I contact Zero Gravity Tech?</summary><p>Chat with Zero Gravity Tech on <a href={WHATSAPP_URL} rel="noreferrer">WhatsApp: {WHATSAPP_DISPLAY}</a> for product questions and order enquiries.</p></details>
         </div>
       </section>
     </>

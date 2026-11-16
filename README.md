@@ -1,4 +1,4 @@
-# Malvo
+# Zero Gravity Tech
 
 Storefront for flagship laptops and phones, built with Next.js 16 and React 19.
 

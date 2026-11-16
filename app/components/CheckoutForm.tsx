@@ -36,7 +36,7 @@ export default function CheckoutForm() {
     return (
       <section className="receipt">
         <h2>Your order is ready, {preparedOrder.firstName}.</h2>
-        <p>Send the prepared message to {WHATSAPP_DISPLAY} in WhatsApp to request your order. Malvo will confirm availability, delivery charges and payment there.</p>
+        <p>Send the prepared message to {WHATSAPP_DISPLAY} in WhatsApp to request your order. Zero Gravity Tech will confirm availability, delivery charges and payment there.</p>
         <p>Your order has not been sent or paid for yet. Your cart is saved if you need to make changes.</p>
         <dl className="sums">
           <div>
@@ -106,7 +106,7 @@ export default function CheckoutForm() {
   return (
     <form className="checkout-grid" onSubmit={submit}>
       <div>
-        <p className="checkout-note">Checkout continues on WhatsApp with Malvo at {WHATSAPP_DISPLAY}. Review your details below, then send the prepared message to confirm availability and delivery.</p>
+        <p className="checkout-note">Checkout continues on WhatsApp with Zero Gravity Tech at {WHATSAPP_DISPLAY}. Review your details below, then send the prepared message to confirm availability and delivery.</p>
         <h2>Delivery details</h2>
         <div className="fields">
           {FIELDS.map((field) => (

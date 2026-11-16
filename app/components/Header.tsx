@@ -23,8 +23,8 @@ export default function Header() {
       </div>
       <HeaderShell>
         <div className="wrap header-row">
-          <Link className="logo" href="/" aria-label="Malvo home">
-            malvo<span>.</span>
+          <Link className="logo" href="/" aria-label="Zero Gravity Tech home">
+            Zero Gravity<span> Tech</span>
           </Link>
           <Suspense>
             <HeaderSearch />
