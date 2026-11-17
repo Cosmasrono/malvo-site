@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { WHATSAPP_DISPLAY, WHATSAPP_URL } from "../lib/whatsapp";
 
@@ -6,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <a href="#top" className="back-top">Back to top</a>
       <div className="wrap footer-main">
-        <div><Link href="/" className="logo">Zero Gravity<span> Tech</span></Link><p>Laptops, desktops, monitors and phones, priced in Kenyan shillings. Questions? Chat with us on <a href={WHATSAPP_URL} rel="noreferrer">WhatsApp: {WHATSAPP_DISPLAY}</a>.</p></div>
+        <div><Link href="/" className="logo footer-logo" aria-label="Zero Gravity Tech home"><Image src="/brand/zgt-lockup.png" alt="Zero Gravity Tech" width={590} height={362} /></Link><p>Laptops, desktops, monitors and phones, priced in Kenyan shillings. Questions? Chat with us on <a href={WHATSAPP_URL} rel="noreferrer">WhatsApp: {WHATSAPP_DISPLAY}</a>.</p></div>
         <nav aria-label="Explore"><Link href="/#collection">The collection</Link><Link href="/compare">Compare devices</Link></nav>
         <nav aria-label="Shopping help"><Link href="/#shopping-help">Shopping questions</Link><Link href="/#shopping-help">Delivery & returns</Link></nav>
       </div>
