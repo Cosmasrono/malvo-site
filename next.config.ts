@@ -21,8 +21,11 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   images: {
-    // Only product photos can be resized, which limits abuse of the optimizer.
-    localPatterns: [{ pathname: "/products/**", search: "" }],
+    // Only product photos and the logo can be resized, which limits abuse of the optimizer.
+    localPatterns: [
+      { pathname: "/products/**", search: "" },
+      { pathname: "/brand/**", search: "" },
+    ],
     qualities: [75],
     formats: ["image/avif", "image/webp"],
     dangerouslyAllowSVG: false,

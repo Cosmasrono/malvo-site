@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Banknote } from "lucide-react";
 import { CartButton, HeaderSearch, HeaderShell, MainNav, MobileBar } from "./HeaderControls";
@@ -24,7 +25,7 @@ export default function Header() {
       <HeaderShell>
         <div className="wrap header-row">
           <Link className="logo" href="/" aria-label="Zero Gravity Tech home">
-            Zero Gravity<span> Tech</span>
+            <Image src="/brand/zgt-wordmark.png" alt="Zero Gravity Tech" width={590} height={104} preload />
           </Link>
           <Suspense>
             <HeaderSearch />
